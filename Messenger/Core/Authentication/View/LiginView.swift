@@ -18,6 +18,7 @@ struct LiginView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150, height: 150)
+                    .padding()
                 VStack {
                     TextField("Enter your email", text: $email)
                         .font(.subheadline)
@@ -88,10 +89,12 @@ struct LiginView: View {
                 Divider()
                 
                 NavigationLink {
-                    Text("Sign up View")
+                   RegistrationView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     HStack {
                         Text("Don't have an account?")
+                        
                         Text("Sign Up")
                             .fontWeight(.semibold)
                     }
