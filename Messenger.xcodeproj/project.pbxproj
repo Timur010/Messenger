@@ -14,6 +14,7 @@
 		3995649E2A5C158A0080BB4C /* MessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3995649D2A5C158A0080BB4C /* MessengerTests.swift */; };
 		399564A82A5C158A0080BB4C /* MessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399564A72A5C158A0080BB4C /* MessengerUITests.swift */; };
 		399564AA2A5C158A0080BB4C /* MessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399564A92A5C158A0080BB4C /* MessengerUITestsLaunchTests.swift */; };
+		399564C02A5C16780080BB4C /* LiginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399564BF2A5C16780080BB4C /* LiginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		399564A32A5C158A0080BB4C /* MessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		399564A72A5C158A0080BB4C /* MessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerUITests.swift; sourceTree = "<group>"; };
 		399564A92A5C158A0080BB4C /* MessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		399564BF2A5C16780080BB4C /* LiginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,11 @@
 		3995648B2A5C15870080BB4C /* Messenger */ = {
 			isa = PBXGroup;
 			children = (
-				3995648C2A5C15870080BB4C /* MessengerApp.swift */,
-				3995648E2A5C15870080BB4C /* ContentView.swift */,
+				399564B62A5C15A90080BB4C /* App */,
+				399564BB2A5C15F40080BB4C /* Extention */,
+				399564B82A5C15C30080BB4C /* Core */,
+				399564B92A5C15CF0080BB4C /* Model */,
+				399564BA2A5C15DD0080BB4C /* Service */,
 				399564902A5C158A0080BB4C /* Assets.xcassets */,
 				399564922A5C158A0080BB4C /* Preview Content */,
 			);
@@ -125,6 +130,68 @@
 				399564A92A5C158A0080BB4C /* MessengerUITestsLaunchTests.swift */,
 			);
 			path = MessengerUITests;
+			sourceTree = "<group>";
+		};
+		399564B62A5C15A90080BB4C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3995648C2A5C15870080BB4C /* MessengerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		399564B82A5C15C30080BB4C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				399564BC2A5C16240080BB4C /* Authentication */,
+				399564BD2A5C164F0080BB4C /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		399564B92A5C15CF0080BB4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		399564BA2A5C15DD0080BB4C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		399564BB2A5C15F40080BB4C /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		399564BC2A5C16240080BB4C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				399564BE2A5C16640080BB4C /* View */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		399564BD2A5C164F0080BB4C /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				3995648E2A5C15870080BB4C /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		399564BE2A5C16640080BB4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				399564BF2A5C16780080BB4C /* LiginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3995648F2A5C15870080BB4C /* ContentView.swift in Sources */,
+				399564C02A5C16780080BB4C /* LiginView.swift in Sources */,
 				3995648D2A5C15870080BB4C /* MessengerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
